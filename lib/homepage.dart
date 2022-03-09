@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reloj_flutter/models/times_model.dart';
 
 import 'widgets/reloj.dart';
 
@@ -19,8 +20,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             // ignore: prefer_const_literals_to_create_immutables
             children: [
-              ClockWidget(),
-              ClockWidget(),
+              ClockWidget(TimesModel(12, 32, 12)),
             ],
           ),
         ),

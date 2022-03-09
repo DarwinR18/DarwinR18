@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:reloj_flutter/models/times_model.dart';
 
 import 'clock_painter.dart';
 
 class ClockWidget extends StatefulWidget {
-  const ClockWidget({Key? key}) : super(key: key);
+  ClockWidget(this.time, {Key? key}) : super(key: key);
+  TimesModel time;
 
   @override
   State<ClockWidget> createState() => _ClockWidgetState();
@@ -13,6 +15,7 @@ class _ClockWidgetState extends State<ClockWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      //Edit circle add blur and spaces
       decoration: const BoxDecoration(shape: BoxShape.circle,
         boxShadow:[
           // ignore: unnecessary_const
@@ -26,6 +29,7 @@ class _ClockWidgetState extends State<ClockWidget> {
       height:300.0,
       width: 300.0,
       child: CustomPaint(
+        //called circle painted
         painter: ClockPainter(),
       ),
       
