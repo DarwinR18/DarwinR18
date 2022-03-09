@@ -30,7 +30,7 @@ class _ClockWidgetState extends State<ClockWidget> {
       width: 300.0,
       child: CustomPaint(
         //called circle painted
-        painter: ClockPainter(),
+        painter: ClockPainter(widget.time),
       ),
       
     );

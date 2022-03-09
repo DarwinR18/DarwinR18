@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             // ignore: prefer_const_literals_to_create_immutables
             children: [
-              ClockWidget(TimesModel(12, 32, 12)),
+              ClockWidget(TimesModel(20, 32, 3)),
             ],
           ),
         ),
